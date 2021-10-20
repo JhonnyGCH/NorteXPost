@@ -43,7 +43,6 @@ export class FormEmpleadoComponent implements OnInit {
   public agregarPersonas(){
     this.personaService.listarPersona().subscribe(personas=>{
       this.personas = personas; 
-      
     })
   }
   public enviarData(){
