@@ -31,6 +31,9 @@ import { interceptorProvider } from './interceptors/paq-interceptor.service';
 import { SeguroService } from './services/seguro.service';
 import { FormEmpleadoComponent } from './forms/form-empleado/form-empleado.component';
 import { CargoService } from './services/cargo.service';
+import { TourService } from './services/tour.service';
+import { FormPaquetesComponent } from './forms/form-paquetes/form-paquetes.component';
+import { AlojamientoService } from './services/alojamiento.service';
 @NgModule({
   declarations: [
     AppComponent, 
@@ -49,6 +52,7 @@ import { CargoService } from './services/cargo.service';
     AuthLoginComponent,
     FormTourComponent,
     FormEmpleadoComponent,
+    FormPaquetesComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,7 +71,9 @@ import { CargoService } from './services/cargo.service';
     interceptorProvider,
     SeguroService,
     RutaService,
-    CargoService
+    CargoService,
+    TourService,
+    AlojamientoService
   ],
   bootstrap: [AppComponent]
 })

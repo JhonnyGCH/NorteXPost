@@ -20,5 +20,9 @@ export class PaqueteService {
     return this.http.get<any>(`${this.uri}/${id}`);
   }
   
+  public post(paquete:any):Observable<any>{
+    return this.http.post<any>(this.uri, paquete)
+  }
+
 
 }

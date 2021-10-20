@@ -12,6 +12,7 @@ import { PruebaComponent } from './prueba/prueba/prueba.component';
 import { ReservasComponent } from './reservas/reservas.component';
 import { FormTourComponent } from './forms/form-tour/form-tour.component';
 import { FormEmpleadoComponent } from './forms/form-empleado/form-empleado.component';
+import { FormPaquetesComponent } from './forms/form-paquetes/form-paquetes.component';
 
 const routes: Routes = [
   {path: 'paquetes',component: PaqueteComponent},
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path:'registro', component:RegistroComponent},
   {path:'prueba', component:PruebaComponent},
   {path:'tour', component:FormTourComponent},
-  {path: 'empleado',component: FormEmpleadoComponent}
+  {path: 'empleado',component: FormEmpleadoComponent},
+  {path: 'paquete',component: FormPaquetesComponent}
 ];
 
 @NgModule({

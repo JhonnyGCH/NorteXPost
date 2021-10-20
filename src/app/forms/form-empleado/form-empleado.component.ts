@@ -38,7 +38,6 @@ export class FormEmpleadoComponent implements OnInit {
   public agregarCargos(){
     this.cargoService.listarCargo().subscribe(cargos=>{
       this.cargos = cargos; 
-      
     })
   }
   public agregarPersonas(){
@@ -49,10 +48,7 @@ export class FormEmpleadoComponent implements OnInit {
   }
   public enviarData(){
     console.log(this.form.value);
-    this.empleadoService.post(this.form.value).subscribe(empleado=>{
-      console.log(empleado);
-      
-    })
+    this.empleadoService.post(this.form.value).subscribe()
   }
   
 }
