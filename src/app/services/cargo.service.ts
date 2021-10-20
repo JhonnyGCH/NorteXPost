@@ -14,4 +14,8 @@ export class CargoService {
   public listarCargo():Observable<any>{
     return this.http.get<any>(this.uri)
   }
+
+  public post(cargo:any):Observable<any>{
+    return this.http.post<any>(this.uri, cargo)
+  }
 }
