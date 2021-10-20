@@ -57,7 +57,7 @@
           <select formControlName = "empleado" class="form-select" aria-label="Default select example">
             <option *ngFor="let empleado of empleados" name="empleado" id="emp{{empleado.idEmpleado}}" 
             value={{empleado.idEmpleado}}>
-              {{empleado.persona.perNom}} {{empleado.persona.perApell}}</option>
+              {{empleado.persona.nombre}} {{empleado.persona.apellido}}</option>
           </select>
         </div>
       </div>
