@@ -37,6 +37,8 @@ import { AlojamientoService } from './services/alojamiento.service';
 import { FormCargoComponent } from './forms/form-cargo/form-cargo.component';
 import { FormPersonaComponent } from './forms/form-persona/form-persona.component';
 import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamiento.component';
+import { FormActividadComponent } from './forms/form-actividad/form-actividad.component';
+import { ActividadService } from './services/actividad.service';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,8 @@ import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamie
     FormPaquetesComponent,
     FormCargoComponent,
     FormPersonaComponent,
-    FormAlojamientoComponent  
+    FormAlojamientoComponent,
+    FormActividadComponent  
   ],
   imports: [
     BrowserModule,
@@ -80,7 +83,8 @@ import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamie
     RutaService,
     CargoService,
     TourService,
-    AlojamientoService
+    AlojamientoService,
+    ActividadService
 
   ],
   bootstrap: [AppComponent]
