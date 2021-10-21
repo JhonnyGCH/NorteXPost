@@ -36,6 +36,8 @@ import { FormPaquetesComponent } from './forms/form-paquetes/form-paquetes.compo
 import { AlojamientoService } from './services/alojamiento.service';
 import { FormCargoComponent } from './forms/form-cargo/form-cargo.component';
 import { FormPersonaComponent } from './forms/form-persona/form-persona.component';
+import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamiento.component';
+
 @NgModule({
   declarations: [
     AppComponent, 
@@ -57,6 +59,7 @@ import { FormPersonaComponent } from './forms/form-persona/form-persona.componen
     FormPaquetesComponent,
     FormCargoComponent,
     FormPersonaComponent,
+    FormAlojamientoComponent  
   ],
   imports: [
     BrowserModule,
@@ -78,6 +81,7 @@ import { FormPersonaComponent } from './forms/form-persona/form-persona.componen
     CargoService,
     TourService,
     AlojamientoService
+
   ],
   bootstrap: [AppComponent]
 })
