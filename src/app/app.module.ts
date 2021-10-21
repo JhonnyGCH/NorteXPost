@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 // Componentes
 import { PayuComponent } from './payu/payu/payu.component';
 import { PaqueteComponent } from './paquete/paquete.component';
@@ -19,30 +20,33 @@ import { ReservasComponent } from './reservas/reservas.component';
 import { AuthRegistroComponent } from './auth/auth-registro/auth-registro.component';
 import { AuthLoginComponent } from './auth/auth-login/auth-login.component';
 import { FormTourComponent } from './forms/form-tour/form-tour.component';
+import { FormSeguroComponent } from './forms/form-seguro/form-seguro.component';
+import { FormRutaComponent } from './forms/form-ruta/form-ruta.component';
+import { FormInformacionCorporativaComponent } from './forms/form-informacion-corporativa/form-informacion-corporativa.component';
+import { FormCargoComponent } from './forms/form-cargo/form-cargo.component';
+import { FormPersonaComponent } from './forms/form-persona/form-persona.component';
+import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamiento.component';
+import { FormActividadComponent } from './forms/form-actividad/form-actividad.component';
+import { FormTransporteComponent } from './forms/form-transporte/form-transporte.component';
+import { FormPaquetesComponent } from './forms/form-paquetes/form-paquetes.component';
+import { FormEmpleadoComponent } from './forms/form-empleado/form-empleado.component';
+import { PruebaComponent } from './prueba/prueba/prueba.component';
+
 // Servicios
 import { PaqueteService } from './services/paquete.service';
 import { RutaService } from './services/ruta.service';
 import { UsuarioService } from './services/usuario.service';
 import { PersonaService } from './services/persona.service';
 import { TransaccionService } from './services/transaccion.service';
-import { PruebaComponent } from './prueba/prueba/prueba.component';
 import { PaqInterceptorService } from './interceptors/paq-interceptor.service';
 import { interceptorProvider } from './interceptors/paq-interceptor.service';
 import { SeguroService } from './services/seguro.service';
-import { FormEmpleadoComponent } from './forms/form-empleado/form-empleado.component';
 import { CargoService } from './services/cargo.service';
 import { TourService } from './services/tour.service';
-import { FormPaquetesComponent } from './forms/form-paquetes/form-paquetes.component';
 import { AlojamientoService } from './services/alojamiento.service';
-import { FormCargoComponent } from './forms/form-cargo/form-cargo.component';
-import { FormPersonaComponent } from './forms/form-persona/form-persona.component';
-import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamiento.component';
-import { FormActividadComponent } from './forms/form-actividad/form-actividad.component';
 import { ActividadService } from './services/actividad.service';
-import { FormTransporteComponent } from './forms/form-transporte/form-transporte.component';
 import { TransporteService } from './services/transporte.service';
-import { FormSeguroComponent } from './forms/form-seguro/form-seguro.component';
-import { FormRutaComponent } from './forms/form-ruta/form-ruta.component';
+
 
 @NgModule({
   declarations: [
@@ -69,7 +73,8 @@ import { FormRutaComponent } from './forms/form-ruta/form-ruta.component';
     FormActividadComponent,
     FormTransporteComponent,
     FormSeguroComponent,
-    FormRutaComponent
+    FormRutaComponent,
+    FormInformacionCorporativaComponent
   ],
   imports: [
     BrowserModule,
