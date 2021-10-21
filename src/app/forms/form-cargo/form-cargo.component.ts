@@ -9,7 +9,6 @@ import { CargoService } from 'src/app/services/cargo.service';
 })
 export class FormCargoComponent implements OnInit {
 
-  public cargos: any = [];
   public form !: FormGroup;
   
   constructor(

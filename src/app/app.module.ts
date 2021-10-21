@@ -25,7 +25,6 @@ import { FormRutaComponent } from './forms/form-ruta/form-ruta.component';
 import { FormInformacionCorporativaComponent } from './forms/form-informacion-corporativa/form-informacion-corporativa.component';
 import { FormCargoComponent } from './forms/form-cargo/form-cargo.component';
 import { FormPersonaComponent } from './forms/form-persona/form-persona.component';
-import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamiento.component';
 import { FormActividadComponent } from './forms/form-actividad/form-actividad.component';
 import { FormTransporteComponent } from './forms/form-transporte/form-transporte.component';
 import { FormPaquetesComponent } from './forms/form-paquetes/form-paquetes.component';
@@ -46,6 +45,7 @@ import { TourService } from './services/tour.service';
 import { AlojamientoService } from './services/alojamiento.service';
 import { ActividadService } from './services/actividad.service';
 import { TransporteService } from './services/transporte.service';
+import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamiento.component';
 
 
 @NgModule({
@@ -69,12 +69,12 @@ import { TransporteService } from './services/transporte.service';
     FormPaquetesComponent,
     FormCargoComponent,
     FormPersonaComponent,
-    FormAlojamientoComponent,
     FormActividadComponent,
     FormTransporteComponent,
     FormSeguroComponent,
     FormRutaComponent,
-    FormInformacionCorporativaComponent
+    FormInformacionCorporativaComponent,
+    FormAlojamientoComponent
   ],
   imports: [
     BrowserModule,
