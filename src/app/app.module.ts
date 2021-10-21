@@ -35,6 +35,7 @@ import { TourService } from './services/tour.service';
 import { FormPaquetesComponent } from './forms/form-paquetes/form-paquetes.component';
 import { AlojamientoService } from './services/alojamiento.service';
 import { FormCargoComponent } from './forms/form-cargo/form-cargo.component';
+import { FormPersonaComponent } from './forms/form-persona/form-persona.component';
 @NgModule({
   declarations: [
     AppComponent, 
@@ -55,6 +56,7 @@ import { FormCargoComponent } from './forms/form-cargo/form-cargo.component';
     FormEmpleadoComponent,
     FormPaquetesComponent,
     FormCargoComponent,
+    FormPersonaComponent,
   ],
   imports: [
     BrowserModule,
