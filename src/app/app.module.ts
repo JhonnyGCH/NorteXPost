@@ -39,6 +39,9 @@ import { FormPersonaComponent } from './forms/form-persona/form-persona.componen
 import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamiento.component';
 import { FormActividadComponent } from './forms/form-actividad/form-actividad.component';
 import { ActividadService } from './services/actividad.service';
+import { FormTransporteComponent } from './forms/form-transporte/form-transporte.component';
+import { TransporteService } from './services/transporte.service';
+import { FormSeguroComponent } from './forms/form-seguro/form-seguro.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +65,9 @@ import { ActividadService } from './services/actividad.service';
     FormCargoComponent,
     FormPersonaComponent,
     FormAlojamientoComponent,
-    FormActividadComponent  
+    FormActividadComponent,
+    FormTransporteComponent,
+    FormSeguroComponent,
   ],
   imports: [
     BrowserModule,
@@ -84,7 +89,8 @@ import { ActividadService } from './services/actividad.service';
     CargoService,
     TourService,
     AlojamientoService,
-    ActividadService
+    ActividadService,
+    TransporteService
 
   ],
   bootstrap: [AppComponent]

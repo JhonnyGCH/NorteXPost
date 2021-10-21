@@ -32,7 +32,7 @@ export class FormPersonaComponent implements OnInit {
       fechaNac: ['', Validators.required],
       cel: ['', Validators.required],
       correo: ['', Validators.required],
-      idTipo: ['', Validators.required],
+      idTipo: ['', Validators.required]
     });
   }
   
