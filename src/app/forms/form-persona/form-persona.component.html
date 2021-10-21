@@ -10,7 +10,7 @@
       <div class="row mb-3">
         <label for="inputIdent" class="col-sm-2 col-form-label">Identificacion</label>
         <div class="col-sm-10">
-          <input formControlName="idPersona" type="text" class="form-control" id="inputIdent" >
+          <input formControlName="idPersona" type="number" class="form-control" id="inputIdent" >
         </div>
       </div>
 
@@ -31,7 +31,7 @@
       <div class="row mb-3">
         <label for="inputSexo" class="col-sm-2 col-form-label">sexo</label>
         <div class="col-sm-10">
-          <input formControlName="sexo" type="text" class="form-control" id="inputSexo" >
+          <input formControlName="sexo" type="number" class="form-control" id="inputSexo" >
         </div>
       </div>
 
@@ -62,8 +62,8 @@
         <label class="col-sm-2 col-form-label">Tipo de documento</label>
         <div class="col-sm-10">
           <select formControlName="idTipo" class="form-select" aria-label="Default select example">
-            <option *ngFor="let tipo of tipos" name="tipo" id="tipo{{tipo.descripcion}}"
-              value={{tipo.descripcion}}>
+            <option *ngFor="let tipo of tipos" name="tipo" id="tipo{{tipo.idTipo}}"
+              value={{tipo.idTipo}}>
               {{tipo.descripcion}}</option>
           </select>
         </div>
