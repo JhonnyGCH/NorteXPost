@@ -15,4 +15,9 @@ export class RutaService {
   public listarRuta():Observable<any>{
     return this.http.get<any>(this.uri)
   }
+
+  public post(ruta:any):Observable<any>{
+    return this.http.post<any>(this.uri, ruta)
+  }
+
 }

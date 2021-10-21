@@ -42,6 +42,7 @@ import { ActividadService } from './services/actividad.service';
 import { FormTransporteComponent } from './forms/form-transporte/form-transporte.component';
 import { TransporteService } from './services/transporte.service';
 import { FormSeguroComponent } from './forms/form-seguro/form-seguro.component';
+import { FormRutaComponent } from './forms/form-ruta/form-ruta.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { FormSeguroComponent } from './forms/form-seguro/form-seguro.component';
     FormActividadComponent,
     FormTransporteComponent,
     FormSeguroComponent,
+    FormRutaComponent
   ],
   imports: [
     BrowserModule,

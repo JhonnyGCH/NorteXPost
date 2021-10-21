@@ -19,6 +19,7 @@ import { FormAlojamientoComponent } from './forms/form-alojamiento/form-alojamie
 import { FormActividadComponent } from './forms/form-actividad/form-actividad.component';
 import { FormTransporteComponent } from './forms/form-transporte/form-transporte.component';
 import { FormSeguroComponent } from './forms/form-seguro/form-seguro.component';
+import { FormRutaComponent } from './forms/form-ruta/form-ruta.component';
 
 const routes: Routes = [
   {path: 'paquetes',component: PaqueteComponent},
@@ -41,7 +42,8 @@ const routes: Routes = [
   {path: 'alojamiento',component: FormAlojamientoComponent},
   {path: 'actividad',component: FormActividadComponent},
   {path: 'transporte',component: FormTransporteComponent},
-  {path: 'seguro',component: FormSeguroComponent}
+  {path: 'seguro',component: FormSeguroComponent},
+  {path: 'ruta',component: FormRutaComponent}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
